@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
       <link rel="icon" href="/signature_black.svg" />
       </Head>
 
-      <main className={`${montserrat.variable} font-mont w-full min-h-screen`}>
+      <main className={`${montserrat.variable} font-mont w-full min-h-screen relative`}>
         <NavBar />
         
         <Component {...pageProps} />

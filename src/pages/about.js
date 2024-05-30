@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Footer from '../components/Footer'
+import Layout from '@/components/Layout'
 
 const about = () => {
   return (
@@ -12,13 +13,19 @@ const about = () => {
           <meta name="description" content="Axxela 2023 Interactive Sustainability Report" /> 
         </Head>
 
-        <main>
-          <div>about</div>
+        <main className='flex items-center text-dark w-full min-h-screen'>
+          <Layout className='pt-0'>
+            <div>about</div>
+            
+            <Footer />
 
-        <section>
-          <Footer />
+          </Layout>
+          
 
-        </section>
+        
+          
+
+        
             
 
             

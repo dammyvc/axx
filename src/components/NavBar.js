@@ -41,7 +41,7 @@ const NavBar = () => {
       }, []);
 
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-white z-50'>
+    <header className='w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-inherit z-50'>
 
         <nav className='flex items-center justify-center flex-wrap'>
             <motion.a href='https://twitter.com/axxelagroup' target={'_blank'}

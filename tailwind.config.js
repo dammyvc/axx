@@ -25,8 +25,14 @@ module.exports = {
         grey1: "#d8d8d6",
         light: "#f5f5f5",
         dark: "#1b1b1b",
-        background: "#f6f6f9"
+        background: "#f6f6f9",
+        white: "#ffffff"
       },
+    },
+    screens: {
+      'sm': {'max': '749px'},
+      'md': {'max': '999px'},
+      // other breakpoints...
     },
   },
   plugins: [
