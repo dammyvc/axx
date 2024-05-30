@@ -17,7 +17,7 @@ const about = () => {
           <Layout className='pt-0'>
             <div>about</div>
             
-            <Footer />
+            <Footer prevLink="./" nextLink="/contents" />
 
           </Layout>
           
