@@ -32,6 +32,7 @@ module.exports = {
     screens: {
       'sm': {'max': '749px'},
       'md': {'max': '999px'},
+      'lg': {'max': '1024px'},
       // other breakpoints...
     },
   },

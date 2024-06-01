@@ -5,7 +5,7 @@ import { LinkArrow } from './Icons';
 const Footer = ({ prevLink, nextLink }) => {
   return (
     <section className='flex w-full justify-center min-h-[50px] relative rounded-inherit box-border max-w-none bg-white border'>
-      <div className='flex-auto w-full'>
+      <div className='flex-auto w-full z-[200]'>
         <div className='flex flex-wrap flex-row w-full mx-auto my-0 min-h-12 justify-between'>
           
           <div className='flex relative flex-col grow shrink max-h-full box-border text-center justify-center bg-partnership border-solid border-black border-0 basis-[calc(33.3333%+0px)] max-w-[calc(33.3333%+0px)] md:grow-0 md:shrink-0 md:order-3 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]'>

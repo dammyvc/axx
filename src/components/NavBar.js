@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from './Logo.js'
 import { InstagramIcon, LinkedInIcon, TwitterIcon } from './Icons.js';
 import { motion } from 'framer-motion';
+import { Tooltip } from '@material-tailwind/react';
 
 const CustomLink = ({href, title, className=""}) => {
         
@@ -41,7 +42,7 @@ const NavBar = () => {
       }, []);
 
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-inherit z-50'>
+    <header className='w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-inherit z-[999]'>
 
         <nav className='flex items-center justify-center flex-wrap'>
             <motion.a href='https://twitter.com/axxelagroup' target={'_blank'}
@@ -73,10 +74,12 @@ const NavBar = () => {
         
 
         <nav>
-
+            <Tooltip placement="left" className="border border-blue-gray-50 rounded-xl bg-white px-4 py-3 shadow-xl shadow-black/10 text-partnership font-medium" content='Toggle Menu'>
+          
             <button id='toggleButton'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
             </button>
+            </Tooltip>
 
         </nav>
 
@@ -84,7 +87,7 @@ const NavBar = () => {
             <Logo />
         </div>
 
-        <div id='cardContainer' className='fixed top-0 right-0 h-full w-0 overflow-hidden bg-backgrouond bg-opacity-50 backdrop-blur-lg shadow-lg transition-all duration-300 z-50'>
+        <div id='cardContainer' className='fixed top-0 right-0 h-full w-0 overflow-hidden bg-background bg-opacity-50 backdrop-blur-lg shadow-lg transition-all duration-300 z-50'>
             <button id='closeButton' className='text-red-500 absolute top-6 right-6 z-30'>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
                 <path d="M18 6 6 18"/>
@@ -161,7 +164,7 @@ const NavBar = () => {
                     </div>
 
                     <div className='w-full h-auto absolute bottom-6 left-0 px-8 text-center border-t border-grey5 pt-6 text-partnership text-sm font-thin'>
-                        Axxela Group &copy; 2024. All Rights Reserved.
+                        <a href='https://www.axxelagroup.com' target='_blank' className='underline'>Axxela Group</a> &copy; 2024. All Rights Reserved.
 
                     </div>
 
