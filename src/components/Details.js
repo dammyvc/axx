@@ -5,7 +5,6 @@ import {
   PopoverContent,
   Avatar,
   Button,
-  Typography,
   List,
   ListItem,
   ListItemPrefix,
@@ -13,32 +12,27 @@ import {
 
 const Details = ({ avatar, name, position, company, phone, email }) => {
   return (
-    <Popover placement="bottom-end" className="!font-mont">
+    <Popover placement="bottom-end" className="!font-mont pb-[30px]">
       <PopoverHandler>
-        <Button className="bg-partnership px-[16px] py-[16px] rounded-full">
-          Contact Us
+        <Button className="bg-partnership px-[12px] py-[12px] rounded-full text-sm m-3">
+          Contact
         </Button>
       </PopoverHandler>
-      <PopoverContent className="w-56">
+      <PopoverContent className="w-60 p-1 rounded-xl">
         <div className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4">
           <Avatar className="rounded-full w-1/4" src={avatar} alt={name} />
           <div>
-            <Typography className="!font-mont" variant="h6" color="blue-gray">
-              {name}
-            </Typography>
-            <Typography
-              variant="small"
-              color="gray"
-              className="font-medium text-blue-gray-500"
-            >
-              {position}
-            </Typography>
+            <p className="!font-mont font-semibold">{name}</p>
+            <p className="!font-mont font-normal">{position}</p>
           </div>
         </div>
-        <List className="p-0">
-          <a href="#" className="text-initial font-medium text-blue-gray-500">
-            <ListItem>
-              <ListItemPrefix>
+        <List className="p-1">
+          <a
+            href="#"
+            className="text-initial font-medium text-blue-gray-500 pb-[10px]"
+          >
+            <ListItem className="!font-mont font-normal text-sm">
+              <ListItemPrefix className="pr-[10px]">
                 <svg
                   width="14"
                   height="16"
@@ -59,10 +53,10 @@ const Details = ({ avatar, name, position, company, phone, email }) => {
           </a>
           <a
             href={`tel:${phone}`}
-            className="text-initial font-medium text-blue-gray-500"
+            className="text-initial font-medium text-blue-gray-500 pb-[10px]"
           >
-            <ListItem>
-              <ListItemPrefix>
+            <ListItem className="!font-mont font-normal text-sm">
+              <ListItemPrefix className="pr-[10px]">
                 <svg
                   width="16"
                   height="16"
@@ -81,10 +75,10 @@ const Details = ({ avatar, name, position, company, phone, email }) => {
           </a>
           <a
             href={`mailto:${email}`}
-            className="text-initial font-medium text-blue-gray-500"
+            className="text-initial font-medium text-blue-gray-500 pb-[10px]"
           >
-            <ListItem>
-              <ListItemPrefix>
+            <ListItem className="!font-mont font-normal text-sm">
+              <ListItemPrefix className="pr-[10px]">
                 <svg
                   width="20"
                   height="20"

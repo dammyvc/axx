@@ -25,6 +25,34 @@ const anitext = {
 };
 
 const about = () => {
+  const johnOkoro = {
+    image: '/images/profiles/John_Okoro.jpeg',
+    name: 'John Okoro',
+    position: 'Head, EHSQ',
+    detailsProps: {
+      avatar: '/images/profiles/John_Okoro.jpeg',
+      name: 'John Okoro',
+      position: 'Head, EHSQ',
+      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
+      phone: '+234-1-2700-035',
+      email: 'jokoro@axxelagroup.com',
+    },
+  };
+
+  const omolaraShitu = {
+    image: '/images/profiles/Omolara_Shitu.jpeg',
+    name: 'Omolara Shitu',
+    position: 'Corporate Communications Lead',
+    detailsProps: {
+      avatar: '/images/profiles/Omolara_Shitu.jpeg',
+      name: 'Omolara Shitu',
+      position: 'Corporate Communications Lead',
+      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
+      phone: '+234-1-2700-035',
+      email: 'oshitu@axxelagroup.com',
+    },
+  };
+
   return (
     <>
       <Head>
@@ -62,7 +90,7 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <h2 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-2xl font-black leading-tight text-partnership uppercase">
+                      <h2 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-2xl font-black leading-tight text-partnership uppercase dark:text-sustainable">
                         Aligning with world sustainability standards
                       </h2>
                     </motion.div>
@@ -74,7 +102,7 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         We are pleased that you are reading our 7th annual
                         Sustainability Report, documenting our sustainable
                         initiatives within our quartet of business operations
@@ -93,7 +121,7 @@ const about = () => {
 
                       <br />
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         For transparency and clarity, we include a series of
                         financial statements, which have undergone rigorous
                         review by an independent auditor. The extent and focus
@@ -103,7 +131,7 @@ const about = () => {
 
                       <br />
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         The consolidation method in our financial reports
                         maintains consistency, with no alterations made
                         regarding minority interests.
@@ -127,7 +155,7 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         We employ a uniform consolidation method for our
                         reporting processes and procedures, ensuring
                         comprehensive inclusion of data from all entities.
@@ -135,7 +163,7 @@ const about = () => {
 
                       <br />
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         This publication aligns with the reporting principles of
                         the GRI Standards, which guide our materiality
                         evaluation, stakeholder engagement, and dualfocused
@@ -150,7 +178,7 @@ const about = () => {
 
                       <br />
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
                         This report has received{' '}
                         <a
                           href="#"
@@ -187,7 +215,7 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark">
+                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark dark:text-light">
                         We highly value your feedback and encourage you to
                         communicate with our team members
                       </h3>
@@ -217,8 +245,8 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <div>
-                        <Contact />
+                      <div className="!font-mont">
+                        <Contact profileCardProps={johnOkoro} />
                       </div>
                     </motion.div>
                   </div>
@@ -240,10 +268,9 @@ const about = () => {
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
                     >
-                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark">
-                        We highly value your feedback and encourage you to
-                        communicate with our team members
-                      </h3>
+                      <div className="!font-mont">
+                        <Contact profileCardProps={omolaraShitu} />
+                      </div>
                     </motion.div>
                   </div>
                 </div>
