@@ -8,7 +8,7 @@ const Hero = ({ text, backgroundImage }) => {
         <section className='flex w-full justify-center relative box-border max-w-none min-h-[565px] max-h-none bg-[rgba(255,255,255,0)] rounded-[inherit]  border-solid border-black border-0 '>
             <div className='flex-auto flex w-full rounded-[inherit]'>
                 <div className='inset-0 absolute w-full h-full rounded-[inherit] overflow-hidden'>
-                    <div className='inset-0 fixed h-[565px] w-full overflow-hidden rounded-[inherit] will-change-transform'>
+                    <div className='inset-0 absolute h-[565px] w-full overflow-hidden rounded-[inherit] will-change-transform'>
                         <div className='bg-no-repeat bg-cover inset-0 absolute w-full h-[584.8px] overflow-hidden pointer-events-none rounded-[inherit] box-border bg-inherit opacity-100 transition-opacity duration-500 ease-linear delay-0' style={{backgroundPosition: '50% 100%', backgroundImage:`url(${backgroundImage})`}}>
                             
 

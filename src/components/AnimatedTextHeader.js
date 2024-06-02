@@ -2,15 +2,17 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const quote = {
-    initial:{
+    hidden:{
         opacity: 0,
-        y: -20,
+        x: -20,
     },
-    animate: {
+    visible: {
         opacity: 1,
-        y: 0,
+        x: 0,
         transition: {
-            duration: 0.5
+            duration: 0.7,
+            ease: 'easeInOut',
+            delay: 0.15,
         }
     }
     
@@ -21,8 +23,9 @@ const AnimatedTextHeader = ({text, className=''}) => {
     <div>
         <motion.h1 className={`inline-block w-full text-white font-bold uppercase text-6xl md:text-5xl sm:text-4xl ${className}`}
         variants={quote}
-        initial='initial'
-        animate='animate'
+        initial='hidden'
+        animate='visible'
+        style={{animationFillMode: 'backwards'}}
         
         >
             {
