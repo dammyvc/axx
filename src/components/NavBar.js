@@ -48,11 +48,12 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-inherit z-[999] bg-white dark:bg-dark">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between fixed bg-inherit z-[969] bg-white dark:bg-dark sm:px-8">
       <nav className="flex items-center justify-center flex-wrap dark:text-light">
         <button
           onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-          className="mr-1 flex items-center justify-center rounded-full p-1"
+          className={`mr-3 flex items-center justify-center rounded-full p-1
+          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}`}
         >
           {mode === 'dark' ? (
             <SunIcon className={'fill-dark dark:fill-light'} />
@@ -66,7 +67,7 @@ const NavBar = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-5 mr-3"
+          className="w-5 mr-3 sm:hidden"
         >
           <TwitterIcon />
         </motion.a>
@@ -76,7 +77,7 @@ const NavBar = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-5 mr-3"
+          className="w-5 mr-3 sm:hidden"
         >
           <LinkedInIcon />
         </motion.a>
@@ -86,7 +87,7 @@ const NavBar = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-5 mr-3"
+          className="w-5 mr-3 sm:hidden"
         >
           <InstagramIcon />
         </motion.a>
@@ -244,8 +245,8 @@ const NavBar = () => {
                 <path d="M13 17a1 1 0 1 0-2 0l.5 4.5a.5.5 0 1 0 1 0Z" />
               </svg>
               <CustomLink
-                href="/ceoSpeaks"
-                title="CEO Speaks"
+                href="/ceoStatement"
+                title="CEO Statement"
                 className="text-base font-medium"
               />
             </div>
@@ -419,7 +420,7 @@ const NavBar = () => {
               />
             </div>
 
-            <div className="w-full h-auto absolute bottom-6 left-0 px-8 text-center border-t border-grey5 pt-6 text-partnership text-sm font-thin dark:text-light">
+            <div className="w-full h-auto absolute bottom-6 left-0 px-8 text-center border-t border-grey5 pt-6 text-partnership text-sm font-thin dark:text-light sm:hidden">
               <a
                 href="https://www.axxelagroup.com"
                 target="_blank"

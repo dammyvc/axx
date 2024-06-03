@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 
 import { motion } from 'framer-motion';
 import Contact from '@/components/Contact';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const anitext = {
   hidden: {
@@ -19,7 +20,7 @@ const anitext = {
     transition: {
       duration: 0.7,
       ease: 'easeInOut',
-      delay: 0.15,
+      delay: 0.8,
     },
   },
 };
@@ -62,6 +63,7 @@ const about = () => {
           content="Axxela 2023 Interactive Sustainability Report"
         />
       </Head>
+      <TransitionEffect />
 
       <Paginator prevLink="./" nextLink="/contents" />
 
