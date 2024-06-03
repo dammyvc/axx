@@ -73,7 +73,7 @@ const buildingConnections = () => {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout>
           <Hero
-            text="Building Connections"
+            text="Building Connections Within Our Network"
             backgroundImage="/images/content/building_connections.jpg"
           />
 

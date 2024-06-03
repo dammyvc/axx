@@ -28,7 +28,8 @@ const Details = ({ avatar, name, position, company, phone, email }) => {
         </div>
         <List className="p-1">
           <a
-            href="#"
+            href="https://maps.app.goo.gl/V8u9cWK5Cu5o1f5w8"
+            target="_blank"
             className="text-initial font-medium text-blue-gray-500 pb-[10px]"
           >
             <ListItem className="!font-mont font-normal text-sm">

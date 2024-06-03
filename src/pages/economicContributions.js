@@ -72,7 +72,7 @@ const economicContributions = () => {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout>
           <Hero
-            text="Economic Contributions"
+            text="Sustainable Economic Contributions"
             backgroundImage="/images/content/economic_contributions.jpeg"
           />
 

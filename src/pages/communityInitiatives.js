@@ -73,7 +73,7 @@ const communityInitiatives = () => {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout>
           <Hero
-            text="Community Initiatives"
+            text="Community Development Initiatives"
             backgroundImage="/images/content/community_initiative.jpeg"
           />
 

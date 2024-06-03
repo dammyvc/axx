@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ImageGallery = () => {
   const data = [
@@ -103,10 +104,14 @@ const ImageGallery = () => {
   return (
     <div className="grid gap-4">
       <div>
-        <img
+        <Image
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
           src={active.imgelink}
-          alt=""
+          alt={active.caption}
+          layout="responsive"
+          width={800}
+          height={600}
+          priority
         />
         <p className="text-center italic text-base text-dark dark:text-light ">
           {active.caption}
@@ -115,11 +120,13 @@ const ImageGallery = () => {
       <div className="grid grid-cols-5 gap-4">
         {data.map(({ imgelink, caption }, index) => (
           <div key={index}>
-            <img
+            <Image
               onClick={() => setActive({ imgelink, caption })}
               src={imgelink}
               className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
               alt={caption}
+              width={100}
+              height={80}
             />
           </div>
         ))}

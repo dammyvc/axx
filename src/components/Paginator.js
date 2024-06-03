@@ -10,10 +10,10 @@ const Paginator = ({ prevLink, nextLink, isLastPage }) => {
   };
 
   return (
-    <div className="flex fixed z-10 right-[30px] bottom-[45%] flex-col justify-center h-[90px] text-[24px] transition-opacity duration-300 ease-linear opacity-100 sm:bottom-[60px] sm:flex-row sm:h-0">
+    <div className="flex fixed z-10 right-[30px] bottom-[45%] flex-col justify-center h-[90px] text-[24px] transition-opacity duration-300 ease-linear opacity-100 sm:bottom-[60px] sm:flex-row sm:h-auto">
       <div
         onClick={() => handleNavigation(prevLink)}
-        className="flex p-[9px] items-center opacity-100 cursor-pointer pointer-events-auto rounded-t-[20px] rounded-b-none bg-vision text-partnership sm:rounded-tl-[2px] sm:rounded-tr-none sm:rounded-br-none sm:rounded-bl-[2px]"
+        className="flex pt-[9px] pr-[8px] pl-[9px] pb-[8px] items-center opacity-100 cursor-pointer pointer-events-auto rounded-t-[20px] rounded-b-none bg-vision text-partnership sm:rounded-tl-[2px] sm:rounded-tr-none sm:rounded-br-none sm:rounded-bl-[2px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Paginator = ({ prevLink, nextLink, isLastPage }) => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-arrow-left"
+          className="lucide lucide-arrow-left align-middle"
         >
           <path d="m12 19-7-7 7-7" />
           <path d="M19 12H5" />
@@ -33,7 +33,7 @@ const Paginator = ({ prevLink, nextLink, isLastPage }) => {
       </div>
 
       {isLastPage ? (
-        <div className="flex p-[9px] items-center cursor-not-allowed rounded-t-none rounded-b-[20px] bg-gray-200 text-gray-400 sm:rounded-tl-none sm:rounded-tr-[2px] sm:rounded-br-[2px] sm:rounded-bl-none">
+        <div className="flex pt-[9px] pr-[8px] pl-[9px] pb-[8px] items-center cursor-not-allowed rounded-t-none rounded-b-[20px] bg-gray-200 text-gray-400 sm:rounded-tl-none sm:rounded-tr-[2px] sm:rounded-br-[2px] sm:rounded-bl-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
