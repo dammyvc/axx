@@ -111,7 +111,6 @@ const ImageGallery = () => {
           layout="responsive"
           width={800}
           height={600}
-          priority
         />
         <p className="text-center italic text-base text-dark dark:text-light ">
           {active.caption}
