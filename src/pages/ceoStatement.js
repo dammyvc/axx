@@ -6,8 +6,9 @@ import Paginator from '@/components/Paginator';
 import Hero from '@/components/Hero';
 
 import { motion } from 'framer-motion';
-import Contact from '@/components/Contact';
 import TransitionEffect from '@/components/TransitionEffect';
+import Btn from '@/components/Button';
+import Link from 'next/link';
 
 const anitext = {
   hidden: {
@@ -26,34 +27,6 @@ const anitext = {
 };
 
 const ceoStatement = () => {
-  const johnOkoro = {
-    image: '/images/profiles/John_Okoro.jpeg',
-    name: 'John Okoro',
-    position: 'Head, EHSQ',
-    detailsProps: {
-      avatar: '/images/profiles/John_Okoro.jpeg',
-      name: 'John Okoro',
-      position: 'Head, EHSQ',
-      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
-      phone: '+234-1-2700-035',
-      email: 'jokoro@axxelagroup.com',
-    },
-  };
-
-  const omolaraShitu = {
-    image: '/images/profiles/Omolara_Shitu.jpeg',
-    name: 'Omolara Shitu',
-    position: 'Corporate Communications Lead',
-    detailsProps: {
-      avatar: '/images/profiles/Omolara_Shitu.jpeg',
-      name: 'Omolara Shitu',
-      position: 'Corporate Communications Lead',
-      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
-      phone: '+234-1-2700-035',
-      email: 'oshitu@axxelagroup.com',
-    },
-  };
-
   return (
     <>
       <Head>
@@ -74,208 +47,129 @@ const ceoStatement = () => {
             backgroundImage="/images/content/ceo_speaks.jpeg"
           />
 
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[50px] max-h-none pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
-            <div className="flex-auto flex w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap mx-auto my-0 min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[80px] pl-0 pr-[32px] md:pt-[53px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <h2 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-2xl font-black leading-tight text-partnership uppercase dark:text-sustainable">
-                        Aligning with world sustainability standards
-                      </h2>
-                    </motion.div>
-
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We are pleased that you are reading our 7th annual
-                        Sustainability Report, documenting our sustainable
-                        initiatives within our quartet of business operations
-                        throughout 2023 calendar year &#40;January 01 - December
-                        31, 2023&#41;. This report has been compiled in
-                        collaboration with our consultancy partner,{' '}
-                        <a
-                          href="https://www.csr-in-action.com"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          CSR-in-Action Consulting
-                        </a>
-                        .
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        For transparency and clarity, we include a series of
-                        financial statements, which have undergone rigorous
-                        review by an independent auditor. The extent and focus
-                        of this sustainability report are matched with those of
-                        our financial report.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        The consolidation method in our financial reports
-                        maintains consistency, with no alterations made
-                        regarding minority interests.
-                      </p>
-                    </motion.div>
-                  </div>
-                </div>
-
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-r-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[144px] pl-0 pr-[32px] md:pt-[11px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible unset !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We employ a uniform consolidation method for our
-                        reporting processes and procedures, ensuring
-                        comprehensive inclusion of data from all entities.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This publication aligns with the reporting principles of
-                        the GRI Standards, which guide our materiality
-                        evaluation, stakeholder engagement, and dualfocused
-                        financial and non-financial sustainability reporting. We
-                        remain committed to reporting within the parameters of
-                        the IFRS Standards for Scope 1 and Scope 2, and we
-                        continue to outline our efforts towards the Sustainable
-                        Development Goals &#40;SDGs&#41;. The content of this
-                        report centres on Axxela's tangible impacts and its
-                        intrinsic value.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This report has received{' '}
-                        <a
-                          href="#"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          external assurance
-                        </a>{' '}
-                        by an assurer accredited with ISAE 3000 certification,
-                        bringing expertise in sustainability report assurance.
-                      </p>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="flex w-full justify-center min-h-[50px] max-h-none pt-[50px] pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
+          <section className="flex w-full justify-center min-h-[50px] relative rounded-[inherit] box-border pt-[100px] px-[24px] pb-[80px] border-solid border-black border-0 md:px-[14.4px] md:pt-[60px] md:pb-[48px] sm:px-[7.2px] sm:pt-[30px] sm:pb-[24px] ">
             <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
               <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-[inherit] basis-[calc(100%+0px)] max-w-[calc(100%+0px)] md:grow-0 sm:grow-0 md:shrink-0 sm:shrink-0">
+                <motion.div
+                  className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-white border-0 rounded-l-[inherit] !basis-[calc(41.6667%-14.5833px)] !max-w-[calc(41.6667%-14.5833px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]"
+                  variants={anitext}
+                  initial="hidden"
+                  animate="visible"
+                  style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                >
                   <div
-                    className="flex flex-auto items-start rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-0 md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-20px sm:pl-[24px] sm:pr-[24px]"
+                    className="flex flex-auto rounded-[inherit] items-start pt-0 pl-0 pr-0 md:pt-0 md:pl-[24px] md:pr-[24px] sm:pt-[26px] sm:pl-[24px] sm:pr-[24px]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
                     }}
                   >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                    <div
+                      className="flex max-w-full leading-[0] w-full mb-[16px] !items-stretch"
+                      style={{ flexDirection: 'inherit' }}
                     >
-                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark dark:text-light">
-                        We highly value your feedback and encourage you to
-                        communicate with our team members
-                      </h3>
-                    </motion.div>
+                      <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
+                        <img
+                          className="w-full h-auto max-h-full pointer-events-none align-middle"
+                          src="/images/profiles/ceo.jpeg"
+                        />
+                      </figure>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
+                </motion.div>
 
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[485px] max-h-none pt-[40px] pb-[150px] border-solid border-black border-0 md:pt-[24px] md:pb-[90px] sm:pt-[12px] sm:pb-[45px]">
-            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
+                <motion.div
+                  className="flex relative flex-col grow shrink max-h-full box-border text-center justify-center border-solid border-vision border-l-[3px] rounded-r-[inherit] !basis-[calc(58.333%-10.4167px)] !max-w-[calc(58.333%-10.4167px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)] sm:border-l-0"
+                  variants={anitext}
+                  initial="hidden"
+                  animate="visible"
+                  style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                >
                   <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
+                    className="flex flex-auto rounded-[inherit] items-center pt-0 pl-[25px] pr-0 md:pt-0 md:pl-[24px] md:pr-[24px] sm:pt-[26px] sm:pl-[24px] sm:pr-[24px]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
-                      alignItems: 'flex-start',
                     }}
                   >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                    <div
+                      className="relative w-full rounded-none text-dark border-solid border-black border-0 mb-0 p-0 visible !block dark:text-light"
+                      style={{ flexDirection: 'inherit', flex: 'unset' }}
                     >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={johnOkoro} />
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light  ">
+                        I am pleased to present to you our Sustainability Report
+                        for the year 2023. At the heart of our sustainability
+                        and corporate responsibility journey is a deep-seated
+                        belief in the power of collaboration, and it gives me
+                        such pride to share the significant progress we have
+                        achieved in the past twelve months.
+                      </p>
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light  ">
+                        Our sustainability target extends beyond our business
+                        operations, it is rooted in our core values and vision
+                        for a transformative future. Through the pages of this
+                        Report, you will read about the comprehensive overview
+                        of our sustainability efforts across different facets of
+                        our business. From promoting natural gas adoption and
+                        utilisation, contributing to carbon emission reduction,
+                        minimising waste, preserving the environment,
+                        encouraging diversity and inclusion within our
+                        workforce, each aspect reflects our unwavering
+                        dedication to enabling a more sustainable future.
+                      </p>
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light  ">
+                        This Report is in line with the core requirements of the
+                        Global Reporting Initiative &#40;GRI&#41; Standards as a
+                        foundation, as well as the International Financial
+                        Reporting Standards' &#40;IFRS&#41; Scope 1 and Scope 2
+                        requirements, with specific focus on areas that are
+                        considered material to Axxela, its assets, and
+                        stakeholders.
+                      </p>
 
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-vision border-l-2 md:border-l-0 md:border-t-2 rounded-r-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                      alignItems: 'flex-start',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light  ">
+                        The transition to a gas-based economy is accelerating
+                        due to recent concerted efforts and commitments from
+                        governments, private sector organisations, investors,
+                        and the wider public. From transition fuel to net-zero
+                        targets, switch from traditional dirty fossil fuels to a
+                        cleaner, environmentally friendly energy alternative, we
+                        understand that meaningful progress requires collective
+                        action. I want to express my heartfelt gratitude to our
+                        employees, customers, partners, suppliers, and other
+                        stakeholders for their unwavering support in driving
+                        this positive change. Through effective collaboration,
+                        we have continued to partner with our customers to turn
+                        promises into action, and together, we can achieve much
+                        more.
+                        <br />
+                        <br />
+                        Thank you for your continued support.
+                      </p>
+
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[60px] cursor-text relative text-start text-sm font-bold text-dark dark:text-light  ">
+                        Bolaji Osunsanya
+                        <br />
+                        Chief Executive Officer
+                      </p>
+                    </div>
+                    <div
+                      className="flex w-full relative pointer-events-auto"
+                      style={{
+                        flexDirection: 'inherit',
+                        alignItems: 'inherit',
+                      }}
                     >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={omolaraShitu} />
-                      </div>
-                    </motion.div>
+                      <Link
+                        className="inline-block m-0"
+                        style={{ alignSelf: 'flex-start' }}
+                        href="#"
+                      >
+                        <Btn text="Read Full Statement" />
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </section>

@@ -14,7 +14,10 @@ const Details = ({ avatar, name, position, company, phone, email }) => {
   return (
     <Popover placement="bottom-end" className="!font-mont pb-[30px]">
       <PopoverHandler>
-        <Button className="bg-partnership px-[12px] py-[12px] rounded-full text-sm m-3">
+        <Button
+          className="whitespace-pre-wrap relative w-fit rounded-none text-lg font-bold text-dark border-solid border-b-[3px] py-[8px] px-[20px] bg-vision border-vision visible !inline-block mt-3  "
+          style={{ boxShadow: 'rgba(0,0,0,0.3) 2px 2px 3px' }}
+        >
           Contact
         </Button>
       </PopoverHandler>
