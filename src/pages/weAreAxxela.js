@@ -6,8 +6,10 @@ import Paginator from '@/components/Paginator';
 import Hero from '@/components/Hero';
 
 import { motion } from 'framer-motion';
-import Contact from '@/components/Contact';
 import TransitionEffect from '@/components/TransitionEffect';
+import { Tooltip } from '@material-tailwind/react';
+import Btn from '@/components/Button';
+import Link from 'next/link';
 
 const anitext = {
   hidden: {
@@ -74,123 +76,236 @@ const weAreAxxela = () => {
             backgroundImage="/images/content/we_are_axxela.jpeg"
           />
 
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[50px] max-h-none pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
-            <div className="flex-auto flex w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap mx-auto my-0 min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
+          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[236px] max-h-none px-[50px] border-solid border-black border-0 md:px-[30px] sm:px-[15px]">
+            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
+              <div className="flex flex-wrap my-0 mx-auto w-full justify-between rounded-[inherit]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-[inherit] !basis-[calc(100%+0px)] !max-w-[calc(100%+0px)] md:grow-0 md:shrink-0 sm:grow-0 sm:shrink-0">
+                  <div className="flex flex-auto items-start pt-[72px] pl-0 pr-[32px] md:pt-[53px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]">
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
+                    >
+                      <h4 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-medium text-dark dark:text-light md:mb-[1.61111em]">
+                        We are Axxela, a dynamic force in the energy and
+                        utilities sector, jointly owned by Helios Investment
+                        Partners LLP and Sojitz Corporation. Our journey is
+                        rooted in a commitment to driving the transition towards
+                        sustainable energy solutions for today and tomorrow.
+                      </h4>
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[375px] max-h-none bg-grey1 dark:bg-grey9 border-solid border-black border-0">
+            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
+              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border bg-grey1 dark:bg-grey9 text-start justify-start border-solid border-black border-0 rounded-tl-[inherit] rounded-tr-[inherit] !basis-[calc(16.667%-20px)] !max-w-[calc(16.667%-20px)] sm:hidden">
                   <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[80px] pl-0 pr-[32px] md:pt-[53px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
+                    className="flex flex-auto rounded-[inherit] pt-[68px] pl-[38px] pr-[27px]"
                     style={{
+                      alignItems: 'flex-start',
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="flex leading-[0] max-w-full w-full mb-[6em] !items-stretch"
                     >
-                      <h2 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-2xl font-black leading-tight text-partnership uppercase dark:text-sustainable">
-                        Aligning with world sustainability standards
-                      </h2>
+                      <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
+                        <img
+                          className="w-full h-auto max-h-full pointer-events-none align-middle"
+                          src="/images/misc/circle1.png"
+                        />
+                      </figure>
                     </motion.div>
 
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="flex leading-[0] max-w-full w-full mb-[3.1875em] !items-stretch"
                     >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We are pleased that you are reading our 7th annual
-                        Sustainability Report, documenting our sustainable
-                        initiatives within our quartet of business operations
-                        throughout 2023 calendar year &#40;January 01 - December
-                        31, 2023&#41;. This report has been compiled in
-                        collaboration with our consultancy partner,{' '}
-                        <a
-                          href="https://www.csr-in-action.com"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          CSR-in-Action Consulting
-                        </a>
-                        .
-                      </p>
+                      <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
+                        <img
+                          className="w-full h-auto max-h-full pointer-events-none align-middle"
+                          src="/images/misc/circle2.png"
+                        />
+                      </figure>
+                    </motion.div>
 
-                      <br />
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="flex leading-[0] max-w-full w-full mb-[4.9em] !items-stretch"
+                    >
+                      <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
+                        <img
+                          className="w-full h-auto max-h-full pointer-events-none align-middle"
+                          src="/images/misc/circle3.png"
+                        />
+                      </figure>
+                    </motion.div>
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        For transparency and clarity, we include a series of
-                        financial statements, which have undergone rigorous
-                        review by an independent auditor. The extent and focus
-                        of this sustainability report are matched with those of
-                        our financial report.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        The consolidation method in our financial reports
-                        maintains consistency, with no alterations made
-                        regarding minority interests.
-                      </p>
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="flex leading-[0] max-w-full w-full mb-[3.1875em] !items-stretch"
+                    >
+                      <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
+                        <img
+                          className="w-full h-auto max-h-full pointer-events-none align-middle"
+                          src="/images/misc/circle4.png"
+                        />
+                      </figure>
                     </motion.div>
                   </div>
                 </div>
 
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-r-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border bg-grey1 dark:bg-grey9 text-start justify-start border-solid border-black border-0 rounded-bl-[inherit] rounded-br-[inherit] !basis-[calc(83.3333%-4px)] !max-w-[calc(83.3333%-4px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
                   <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[144px] pl-0 pr-[32px] md:pt-[11px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
+                    className="flex flex-auto rounded-[inherit] pt-[71px] pl-[0px] pr-[50px] md:pt-[60px] md:pl-[50px] md:pr-[50px] sm:pt-[60px] sm:pl-[40px] sm:pr-[40px]"
                     style={{
+                      alignItems: 'flex-start',
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible unset !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-[1.5em] p-0 visible !block"
                     >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We employ a uniform consolidation method for our
-                        reporting processes and procedures, ensuring
-                        comprehensive inclusion of data from all entities.
+                      <p className="break-words, whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light text-dark dark:text-light">
+                        <span className="font-bold">
+                          Our Reach, Our Commitment
+                        </span>
+                        <br />
+                        With operations spanning Nigeria - from Lagos, Sagamu,
+                        Abuja, and Port Harcourt - to the international
+                        landscape of Togo, particularly in Lome, our presence
+                        echoes our dedication to shaping a sustainable energy
+                        future. Axxela Limited, along with our subsidiaries -
+                        Gaslink Nigeria Limited, Transit Gas Nigeria Limited,
+                        Central Horizon Gas Company, and Gas Network Service
+                        Limited - stands as a beacon of innovation and progress.
                       </p>
+                    </motion.div>
 
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This publication aligns with the reporting principles of
-                        the GRI Standards, which guide our materiality
-                        evaluation, stakeholder engagement, and dualfocused
-                        financial and non-financial sustainability reporting. We
-                        remain committed to reporting within the parameters of
-                        the IFRS Standards for Scope 1 and Scope 2, and we
-                        continue to outline our efforts towards the Sustainable
-                        Development Goals &#40;SDGs&#41;. The content of this
-                        report centres on Axxela's tangible impacts and its
-                        intrinsic value.
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark border-solid border-black border-0 mb-[1.5em] p-0 visible !block"
+                    >
+                      <p className="break-words, whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light text-dark dark:text-light">
+                        <span className="font-bold">
+                          Strengthened by Collaboration, Driven by Purpose
+                        </span>
+                        <br />
+                        Through audited consolidated financial statements, we
+                        uphold transparency and accountability, showcasing the
+                        strength of our partnerships and the depth of our
+                        commitment. As a joint venture, we harness the
+                        collective expertise of Helios Investment Partners LLP
+                        and Sojitz Corporation, reinforcing our position as a
+                        leader in the energy sector.
                       </p>
+                    </motion.div>
 
-                      <br />
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark border-solid border-black border-0 mb-[1.5em] p-0 visible !block"
+                    >
+                      <p className="break-words, whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light text-dark dark:text-light">
+                        <span className="font-bold">
+                          Pioneering Sustainable Solutions
+                        </span>
+                        <br />
+                        At Axxela Limited, we are pioneers in natural gas,
+                        electric power, and energy infrastructure development,
+                        illuminating pathways towards a greener future. Our
+                        supply chain, meticulously crafted to deliver efficiency
+                        and reliability, ensures seamless transmission of gas
+                        from processing stations to distribution companies like
+                        ours.
+                      </p>
+                    </motion.div>
 
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This report has received{' '}
-                        <a
-                          href="#"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          external assurance
-                        </a>{' '}
-                        by an assurer accredited with ISAE 3000 certification,
-                        bringing expertise in sustainability report assurance.
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark border-solid border-black border-0 mb-[1.5em] p-0 visible !block"
+                    >
+                      <p className="break-words, whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light text-dark dark:text-light">
+                        <span className="font-bold">
+                          Empowering Communities, Enriching Lives
+                        </span>
+                        <br />
+                        Gas suppliers deliver gas through transmission lines to
+                        processing stations, where it undergoes purification to
+                        remove any impurities, such as liquids and condensates.
+                        Once processed, the natural gas is supplied to local
+                        distribution companies like Axxela, via pipelines. From
+                        there, we distribute the processed natural gas to our
+                        customers downstream using pipelines, CNG skids, and
+                        other distribution methods. Additionally, Axxela plays a
+                        crucial role in supplying gas to Togo through the West
+                        Africa Gas Pipeline &#40;WAGP&#41;.
                       </p>
                     </motion.div>
                   </div>
@@ -199,80 +314,54 @@ const weAreAxxela = () => {
             </div>
           </section>
 
-          <section className="flex w-full justify-center min-h-[50px] max-h-none pt-[50px] pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
+          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[349px] max-h-none px-[50px] mb-11 border-solid border-black border-0 md:px-[30px] sm:px-[15px]">
             <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-[inherit] basis-[calc(100%+0px)] max-w-[calc(100%+0px)] md:grow-0 sm:grow-0 md:shrink-0 sm:shrink-0">
-                  <div
-                    className="flex flex-auto items-start rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-0 md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-20px sm:pl-[24px] sm:pr-[24px]"
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                    }}
-                  >
+              <div className="flex flex-wrap my-0 mx-auto w-full justify-between rounded-[inherit]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-[inherit] !basis-[calc(100%+0px)] !max-w-[calc(100%+0px)] md:grow-0 md:shrink-0 sm:grow-0 sm:shrink-0">
+                  <div className="flex flex-auto items-start pt-[72px] pl-0 pr-[32px] md:pt-[53px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]">
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
                       style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
                     >
-                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark dark:text-light">
-                        We highly value your feedback and encourage you to
-                        communicate with our team members
-                      </h3>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+                      <h4 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-medium text-dark dark:text-light md:mb-[1.61111em]">
+                        At Axxela Group, our commitment to sustainability is
+                        deeply ingrained in our strategic imperatives, guided by
+                        globally recognised standards. Through direct engagement
+                        with stakeholders and strategic partnerships, we
+                        navigate the complex intersections of economic,
+                        environmental, and social impacts arising from our
+                        operations.
+                        <br />
+                        <br />
+                        In the past year, notable achievements include 7.7
+                        million LTI-free man-hours, elevation to Silver in the
+                        EcoVadis Sustainability Ratings assessment, and
+                        enrollment with the UN Global Compact &#40;UNGC&#41;,
+                        underscoring our dedication to excellence and
+                        sustainability. Looking ahead to 2024, we aim to expand
+                        our impact further by awarding scholarships to deserving
+                        students, enhancing our{' '}
+                        <Tooltip
+                          placement="top"
+                          className="border border-blue-gray-50 rounded-xl bg-white px-4 py-3 shadow-xl shadow-black/10 text-partnership font-medium"
+                          content="Supervisory Control and Data Acquisition (SCADA) systems are used for controlling, monitoring, and analysing industrial devices and processes."
+                        >
+                          <span className="bg-vision">SCADA System</span>
+                        </Tooltip>
+                        , and improving our Ecovadis Sustainability Rating from
+                        Silver to Gold. Despite challenges such as gas supply
+                        shortages and FX market fluctuations, we remain focused
+                        on our mid-term goals, including expanding our natural
+                        gas distribution network and exploring opportunities for
+                        inorganic growth.
+                      </h4>
 
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[485px] max-h-none pt-[40px] pb-[150px] border-solid border-black border-0 md:pt-[24px] md:pb-[90px] sm:pt-[12px] sm:pb-[45px]">
-            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                      alignItems: 'flex-start',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={johnOkoro} />
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-vision border-l-2 md:border-l-0 md:border-t-2 rounded-r-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                      alignItems: 'flex-start',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={omolaraShitu} />
-                      </div>
+                      <Link href="#" target="_blank">
+                        <Btn text="More About Axxela" />
+                      </Link>
                     </motion.div>
                   </div>
                 </div>
