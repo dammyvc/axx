@@ -10,6 +10,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 import { Tooltip } from '@material-tailwind/react';
 import Btn from '@/components/Button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const anitext = {
   hidden: {
@@ -126,9 +127,12 @@ const weAreAxxela = () => {
                       className="flex leading-[0] max-w-full w-full mb-[6em] !items-stretch"
                     >
                       <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full pointer-events-none align-middle"
                           src="/images/misc/circle1.png"
+                          width={266}
+                          height={266}
+                          alt="Item 1"
                         />
                       </figure>
                     </motion.div>
@@ -145,9 +149,12 @@ const weAreAxxela = () => {
                       className="flex leading-[0] max-w-full w-full mb-[3.1875em] !items-stretch"
                     >
                       <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full pointer-events-none align-middle"
                           src="/images/misc/circle2.png"
+                          width={266}
+                          height={266}
+                          alt="Item 2"
                         />
                       </figure>
                     </motion.div>
@@ -164,9 +171,12 @@ const weAreAxxela = () => {
                       className="flex leading-[0] max-w-full w-full mb-[4.9em] !items-stretch"
                     >
                       <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full pointer-events-none align-middle"
                           src="/images/misc/circle3.png"
+                          width={266}
+                          height={266}
+                          alt="Item 3"
                         />
                       </figure>
                     </motion.div>
@@ -183,9 +193,12 @@ const weAreAxxela = () => {
                       className="flex leading-[0] max-w-full w-full mb-[3.1875em] !items-stretch"
                     >
                       <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full pointer-events-none align-middle"
                           src="/images/misc/circle4.png"
+                          width={266}
+                          height={266}
+                          alt="Item 4"
                         />
                       </figure>
                     </motion.div>

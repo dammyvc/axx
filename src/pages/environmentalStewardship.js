@@ -6,8 +6,9 @@ import Paginator from '@/components/Paginator';
 import Hero from '@/components/Hero';
 
 import { motion } from 'framer-motion';
-import Contact from '@/components/Contact';
 import TransitionEffect from '@/components/TransitionEffect';
+import Renewable from '@/components/Renewable';
+import SimpleLineChart from '@/components/Renewable';
 
 const anitext = {
   hidden: {
@@ -26,34 +27,6 @@ const anitext = {
 };
 
 const environmentalStewardship = () => {
-  const johnOkoro = {
-    image: '/images/profiles/John_Okoro.jpeg',
-    name: 'John Okoro',
-    position: 'Head, EHSQ',
-    detailsProps: {
-      avatar: '/images/profiles/John_Okoro.jpeg',
-      name: 'John Okoro',
-      position: 'Head, EHSQ',
-      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
-      phone: '+234-1-2700-035',
-      email: 'jokoro@axxelagroup.com',
-    },
-  };
-
-  const omolaraShitu = {
-    image: '/images/profiles/Omolara_Shitu.jpeg',
-    name: 'Omolara Shitu',
-    position: 'Corporate Communications Lead',
-    detailsProps: {
-      avatar: '/images/profiles/Omolara_Shitu.jpeg',
-      name: 'Omolara Shitu',
-      position: 'Corporate Communications Lead',
-      company: '8th Floor, The Wings Office Complex, Lagos, Nigeria',
-      phone: '+234-1-2700-035',
-      email: 'oshitu@axxelagroup.com',
-    },
-  };
-
   return (
     <>
       <Head>
@@ -76,123 +49,150 @@ const environmentalStewardship = () => {
             backgroundImage="/images/content/environmental_stewardship.jpeg"
           />
 
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[50px] max-h-none pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
-            <div className="flex-auto flex w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap mx-auto my-0 min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
+          <section className="flex w-full justify-center relative rounded-[inherit] box-border max-w-none min-h-[136px] max-h-none border-solid border-black border-0">
+            <div className="flex flex-auto w-full rounded-[inherit] max-w-none">
+              <div className="flex flex-wrap my-0 mx-auto w-full justify-between rounded-[inherit]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-l-[inherit] !basis-[calc(33.3333%+0px)] !max-w-[calc(33.3333%+0px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
                   <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[80px] pl-0 pr-[32px] md:pt-[53px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
+                    className="flex flex-auto rounded-[inherit] pt-[50px] pl-[3.59712vw] pr-[3.59712vw] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pl-[6.4vw] sm:pr-[6.4vw]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
+                      alignItems: 'flex-start',
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
                     >
-                      <h2 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-2xl font-black leading-tight text-partnership uppercase dark:text-sustainable">
-                        Aligning with world sustainability standards
-                      </h2>
-                    </motion.div>
+                      <h4 className="break-words whitespace-pre-wrap p-0 cursor-text relative text-dark dark:text-light mb-[0.625em] text-xl font-bold">
+                        Biodiversity Conservation Initiatives
+                      </h4>
 
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We are pleased that you are reading our 7th annual
-                        Sustainability Report, documenting our sustainable
-                        initiatives within our quartet of business operations
-                        throughout 2023 calendar year &#40;January 01 - December
-                        31, 2023&#41;. This report has been compiled in
-                        collaboration with our consultancy partner,{' '}
-                        <a
-                          href="https://www.csr-in-action.com"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          CSR-in-Action Consulting
-                        </a>
-                        .
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        We prioritise environmental protection and minimise our
+                        impact on the ecosystem throughout our operations. Our
+                        approach includes comprehensive environmental impact
+                        studies and social assessments during the project
+                        planning and pre-construction phases, continuous
+                        environmental monitoring &#40;quarterly or
+                        biannually&#41;, regular audits, and compliance checks.
+                        Independent environmental consultants conduct these
+                        assessments according to statutory requirements and
+                        international best practices.
                       </p>
 
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        For transparency and clarity, we include a series of
-                        financial statements, which have undergone rigorous
-                        review by an independent auditor. The extent and focus
-                        of this sustainability report are matched with those of
-                        our financial report.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        The consolidation method in our financial reports
-                        maintains consistency, with no alterations made
-                        regarding minority interests.
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        Our facilities are not located in protected areas, and
+                        our operations do not have additional adverse effects on
+                        biodiversity beyond the conversion of one acre of land
+                        for the TGNL gas facility in Ibefun, Ogun State,
+                        Nigeria. We use existing transport infrastructure built
+                        by the Federal Government, and our activities do not
+                        contribute to atmospheric pollutants, introduce new
+                        invasive species or pests, reduce species, or change
+                        ecological processes outside the natural range of
+                        variation.
                       </p>
                     </motion.div>
                   </div>
                 </div>
 
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-r-[inherit] basis-[calc(50%-12px)] max-w-[calc(50%-12px)] md:grow-0 md:shrink-0 md:basis-[calc(100%-0px)] md:max-w-[calc(100%-0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%-0px)] sm:max-w-[calc(100%-0px)]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border bg-grey1 dark:bg-grey9 text-start justify-start border-solid border-black border-0 !basis-[calc(33.3333%+0px)] !max-w-[calc(33.3333%+0px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
                   <div
-                    className="flex flex-auto rounded-[inherit] items-start pt-[144px] pl-0 pr-[32px] md:pt-[11px] md:pl-[24px] md:pr-[24px] sm:pt-[24px] sm:pl-[24px] sm:pr-[24px]  "
+                    className="flex flex-auto rounded-[inherit] pt-[50px] pl-[3.59712vw] pr-[3.59712vw] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pl-[6.4vw] sm:pr-[6.4vw]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
+                      alignItems: 'flex-start',
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible unset !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
                     >
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        We employ a uniform consolidation method for our
-                        reporting processes and procedures, ensuring
-                        comprehensive inclusion of data from all entities.
+                      <h4 className="break-words whitespace-pre-wrap p-0 cursor-text relative text-dark dark:text-light mb-[0.625em] text-xl font-bold">
+                        Water Management
+                      </h4>
+
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        Our day-to-day administrative operations have no
+                        water-related impacts. Water is primarily used for
+                        office cleaning, drinking, handwashing, and other
+                        sanitary purposes. We source water either from
+                        underground water tables via boreholes or obtain it from
+                        vendors for drinking water.
+                      </p>
+                    </motion.div>
+                  </div>
+                </div>
+
+                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-l-[inherit] !basis-[calc(33.3333%+0px)] !max-w-[calc(33.3333%+0px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
+                  <div
+                    className="flex flex-auto rounded-[inherit] pt-[50px] pl-[3.59712vw] pr-[3.59712vw] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pl-[6.4vw] sm:pr-[6.4vw]"
+                    style={{
+                      flexDirection: 'inherit',
+                      justifyContent: 'inherit',
+                      alignItems: 'flex-start',
+                    }}
+                  >
+                    <motion.div
+                      variants={anitext}
+                      initial="hidden"
+                      animate="visible"
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
+                    >
+                      <h4 className="break-words whitespace-pre-wrap p-0 cursor-text relative text-dark dark:text-light mb-[0.625em] text-xl font-bold">
+                        Sustainable Practices for Reduced Carbon Emissions
+                      </h4>
+
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        At Axxela, we conduct a comprehensive assessment of our
+                        environmental and social impact to ensure responsible
+                        and sustainable operations. This assessment covers both
+                        actual negative impacts on the environment, such as
+                        natural gas emissions, CO<sup>2</sup> emissions from
+                        electricity, commuting, and diesel consumption, as well
+                        as potential negative impacts on people, like increased
+                        natural gas emissions and fire incidents. To address
+                        these impacts, we implement various mitigation measures,
+                        including reducing inefficiencies in energy usage,
+                        conducting baseline integrity and pipeline leak surveys,
+                        and actively contributing to carbon sequestration
+                        efforts.
                       </p>
 
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This publication aligns with the reporting principles of
-                        the GRI Standards, which guide our materiality
-                        evaluation, stakeholder engagement, and dualfocused
-                        financial and non-financial sustainability reporting. We
-                        remain committed to reporting within the parameters of
-                        the IFRS Standards for Scope 1 and Scope 2, and we
-                        continue to outline our efforts towards the Sustainable
-                        Development Goals &#40;SDGs&#41;. The content of this
-                        report centres on Axxela's tangible impacts and its
-                        intrinsic value.
-                      </p>
-
-                      <br />
-
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This report has received{' '}
-                        <a
-                          href="#"
-                          target="_blank"
-                          className="underline font-bold italic text-sustainable"
-                        >
-                          external assurance
-                        </a>{' '}
-                        by an assurer accredited with ISAE 3000 certification,
-                        bringing expertise in sustainability report assurance.
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        Additionally, we set Environmental, Social, and
+                        Governance &#40;ESG&#41; targets and objectives, request
+                        GHG data quarterly for review, and maintain an emergency
+                        response team on standby to address reported gas leaks
+                        promptly. Our stakeholder engagement initiatives lead to
+                        continuous improvement, with measures such as installing
+                        markers along Right of Way, conducting sensitisation
+                        sessions, and collaborating with government agencies to
+                        monitor encroachment. These efforts demonstrate our
+                        commitment to minimising environmental impact and
+                        prioritising stakeholder well-being.
                       </p>
                     </motion.div>
                   </div>
@@ -201,41 +201,12 @@ const environmentalStewardship = () => {
             </div>
           </section>
 
-          <section className="flex w-full justify-center min-h-[50px] max-h-none pt-[50px] pl-[50px] pr-[50px] border-solid border-black border-0 md:pl-[30px] md:pr-[30px] sm:pl-[15px] sm:pr-[15px]">
-            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start justify-start border-solid border-black border-0 rounded-[inherit] basis-[calc(100%+0px)] max-w-[calc(100%+0px)] md:grow-0 sm:grow-0 md:shrink-0 sm:shrink-0">
+          <section className="flex w-full justify-center relative rounded-[inherit] box-border max-w-none min-h-[136px] max-h-none border-solid border-black border-0">
+            <div className="flex flex-auto w-full rounded-[inherit] max-w-none">
+              <div className="flex flex-wrap my-0 mx-auto w-full justify-between rounded-[inherit]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border bg-background dark:bg-grey7 text-start justify-start border-solid border-black border-0 rounded-l-[inherit] !basis-[calc(50%+0px)] !max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
                   <div
-                    className="flex flex-auto items-start rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-0 md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-20px sm:pl-[24px] sm:pr-[24px]"
-                    style={{
-                      flexDirection: 'inherit',
-                      justifyContent: 'inherit',
-                    }}
-                  >
-                    <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
-                      variants={anitext}
-                      initial="hidden"
-                      animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
-                    >
-                      <h3 className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text text-center relative text-xl font-normal leading-tight text-dark dark:text-light">
-                        We highly value your feedback and encourage you to
-                        communicate with our team members
-                      </h3>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="flex w-full justify-center relative rounded-[inherit] box-border min-h-[485px] max-h-none pt-[40px] pb-[150px] border-solid border-black border-0 md:pt-[24px] md:pb-[90px] sm:pt-[12px] sm:pb-[45px]">
-            <div className="flex flex-auto w-full rounded-[inherit] max-w-[1024px]">
-              <div className="flex flex-wrap my-0 mx-auto min-h-[50px] w-full justify-between rounded-[inherit]">
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-black border-0 rounded-l-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
-                  <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
+                    className="flex flex-auto rounded-[inherit] pt-[50px] pl-[3.59712vw] pr-[3.59712vw] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pl-[6.4vw] sm:pr-[6.4vw]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
@@ -243,22 +214,24 @@ const environmentalStewardship = () => {
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
                     >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={johnOkoro} />
-                      </div>
+                      <SimpleLineChart />
                     </motion.div>
                   </div>
                 </div>
 
-                <div className="flex relative flex-col grow shrink max-h-full box-border text-start border-solid border-vision border-l-2 md:border-l-0 md:border-t-2 rounded-r-[inherit] basis-[calc(50%+0px)] max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:basis-[calc(100%+0px)] md:max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:basis-[calc(100%+0px)] sm:max-w-[calc(100%+0px)]">
+                <div className="flex relative flex-col grow shrink max-h-full box-border bg-background dark:bg-grey7 text-start justify-start border-solid border-black border-0 !basis-[calc(50%+0px)] !max-w-[calc(50%+0px)] md:grow-0 md:shrink-0 md:!basis-[calc(100%+0px)] md:!max-w-[calc(100%+0px)] sm:grow-0 sm:shrink-0 sm:!basis-[calc(100%+0px)] sm:!max-w-[calc(100%+0px)]">
                   <div
-                    className="flex flex-auto rounded-[inherit] pt-0 pl-[80px] pr-[50px] md:pt-[60px] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pt-[20px] sm:pl-[24px] sm:pr-[24px]"
+                    className="flex flex-auto rounded-[inherit] pt-[50px] pl-[3.59712vw] pr-[3.59712vw] md:pl-[6.51042vw] md:pr-[6.51042vw] sm:pl-[6.4vw] sm:pr-[6.4vw]"
                     style={{
                       flexDirection: 'inherit',
                       justifyContent: 'inherit',
@@ -266,15 +239,28 @@ const environmentalStewardship = () => {
                     }}
                   >
                     <motion.div
-                      className="relative w-full rounded-none border-solid border-black border-0 mb-0 p-0 visible !block"
                       variants={anitext}
                       initial="hidden"
                       animate="visible"
-                      style={{ animationFillMode: 'backwards', flex: 'unset' }}
+                      style={{
+                        animationFillMode: 'backwards',
+                        flex: 'unset',
+                        flexDirection: 'inherit',
+                      }}
+                      className="relative w-full rounded-none text-dark dark:text-light border-solid border-black border-0 mb-0 p-0 visible !block"
                     >
-                      <div className="!font-mont">
-                        <Contact profileCardProps={omolaraShitu} />
-                      </div>
+                      <h4 className="break-words whitespace-pre-wrap p-0 cursor-text relative text-dark dark:text-light mb-[0.625em] text-xl font-bold">
+                        Water Management
+                      </h4>
+
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-dark dark:text-light font-light text-base">
+                        Our day-to-day administrative operations have no
+                        water-related impacts. Water is primarily used for
+                        office cleaning, drinking, handwashing, and other
+                        sanitary purposes. We source water either from
+                        underground water tables via boreholes or obtain it from
+                        vendors for drinking water.
+                      </p>
                     </motion.div>
                   </div>
                 </div>

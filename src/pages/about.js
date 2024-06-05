@@ -8,6 +8,7 @@ import Hero from '@/components/Hero';
 import { motion } from 'framer-motion';
 import Contact from '@/components/Contact';
 import TransitionEffect from '@/components/TransitionEffect';
+import Link from 'next/link';
 
 const anitext = {
   hidden: {
@@ -110,14 +111,14 @@ const about = () => {
                         initiatives within our quartet of business operations
                         throughout 2023 calendar year &#40;January 01 - December
                         31, 2023&#41;. This report has been compiled in
-                        collaboration with our consultancy partner,{' '}
-                        <a
+                        collaboration with our consultancy partner,
+                        <Link
                           href="https://www.csr-in-action.com"
                           target="_blank"
                           className="underline font-bold italic text-sustainable"
                         >
                           CSR-in-Action Consulting
-                        </a>
+                        </Link>
                         .
                       </p>
 
@@ -181,14 +182,14 @@ const about = () => {
                       <br />
 
                       <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-base font-light leading-tight text-dark dark:text-light">
-                        This report has received{' '}
-                        <a
+                        This report has received
+                        <Link
                           href="#"
                           target="_blank"
                           className="underline font-bold italic text-sustainable"
                         >
                           external assurance
-                        </a>{' '}
+                        </Link>
                         by an assurer accredited with ISAE 3000 certification,
                         bringing expertise in sustainability report assurance.
                       </p>

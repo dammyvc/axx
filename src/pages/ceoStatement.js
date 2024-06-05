@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 import Btn from '@/components/Button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const anitext = {
   hidden: {
@@ -69,9 +70,12 @@ const ceoStatement = () => {
                       style={{ flexDirection: 'inherit' }}
                     >
                       <figure className="inline-block max-w-full w-full min-w-[20px] relative box-border overflow-hidden m-0">
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full pointer-events-none align-middle"
                           src="/images/profiles/ceo.jpeg"
+                          width={500}
+                          height={500}
+                          alt="Axxela's CEO"
                         />
                       </figure>
                     </div>
@@ -117,7 +121,7 @@ const ceoStatement = () => {
                         workforce, each aspect reflects our unwavering
                         dedication to enabling a more sustainable future.
                       </p>
-                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light  ">
+                      <p className="break-words whitespace-pre-wrap p-0 mb-[0.55em] cursor-text relative text-start text-sm text-dark dark:text-light">
                         This Report is in line with the core requirements of the
                         Global Reporting Initiative &#40;GRI&#41; Standards as a
                         foundation, as well as the International Financial
