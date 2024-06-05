@@ -175,7 +175,7 @@ const about = () => {
                         the IFRS Standards for Scope 1 and Scope 2, and we
                         continue to outline our efforts towards the Sustainable
                         Development Goals &#40;SDGs&#41;. The content of this
-                        report centres on Axxela's tangible impacts and its
+                        report centres on Axxela&apos;s tangible impacts and its
                         intrinsic value.
                       </p>
 

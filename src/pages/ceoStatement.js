@@ -125,9 +125,9 @@ const ceoStatement = () => {
                         This Report is in line with the core requirements of the
                         Global Reporting Initiative &#40;GRI&#41; Standards as a
                         foundation, as well as the International Financial
-                        Reporting Standards' &#40;IFRS&#41; Scope 1 and Scope 2
-                        requirements, with specific focus on areas that are
-                        considered material to Axxela, its assets, and
+                        Reporting Standards&apos; &#40;IFRS&#41; Scope 1 and
+                        Scope 2 requirements, with specific focus on areas that
+                        are considered material to Axxela, its assets, and
                         stakeholders.
                       </p>
 
